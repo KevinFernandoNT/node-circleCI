@@ -10,8 +10,8 @@ jobs:
             name: Install npm deps
             command: |
                 npm install --save
-            - run:
-                name: build API
-                command: npm run build
+        - run:
+            name: build API
+            command: npm run build
         
       
