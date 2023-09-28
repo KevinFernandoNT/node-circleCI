@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  - run_node_tests:
+  run_node_tests:
       docker:
         - image: circleci/node:10
       steps:
