@@ -13,7 +13,7 @@ jobs:
       - run:
           name: ssh into remote server 
           command: |
-            ssh -o StrictHostKeyChecking=no root@139.59.221.233
+            ssh -o StrictHostKeyChecking=no rootuser
             cd ./etc
             mkdir custom_ci_path
 workflows:
