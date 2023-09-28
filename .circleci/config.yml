@@ -2,16 +2,14 @@ version: 2.1
 
 jobs:
   run_node_tests:
-      docker:
-        - image: circleci/node:10
-      steps:
-        - checkout
-        - run:
-            name: Install npm deps
-            command: |
-                npm install --save
-        - run:
-            name: build API
-            command: npm run build
-        
-      
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: Install npm deps
+          command: |
+            npm install --save
+      - run:
+          name: Build API
+          command: npm run build
