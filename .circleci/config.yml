@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  run_node_tests:
+  run_node_starter:
     docker:
       - image: circleci/node:10
     steps:
@@ -13,3 +13,7 @@ jobs:
       - run:
           name: Build API
           command: npm run build
+workflows:
+  build_node_api:
+    jobs:
+      - run_node_starter
